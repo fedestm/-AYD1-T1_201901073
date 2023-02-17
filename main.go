@@ -15,7 +15,7 @@ func main() {
 		var body Request
 		c.BodyParser(&body)
 
-		suma := body.Num1 + body.Num2
+		suma := body.Num1 * body.Num2
 
 		return c.JSON(fiber.Map{
 			"suma": suma,
