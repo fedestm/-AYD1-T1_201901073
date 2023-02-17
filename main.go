@@ -22,5 +22,12 @@ func main() {
 		})
 	})
 
+	app.Get("/info-201901073", func (c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"nombre": "Federico David Zet Pajoc",
+			"carnet": 201901073,
+		})
+	})
+
 	app.Listen(":3000")
 }
